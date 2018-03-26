@@ -236,7 +236,9 @@ Explanation for each field:
         /* Used for storing share and block submission data and payment processing. */
         "redis": {
             "host": "127.0.0.1",
-            "port": 6379
+            "port": 6379,
+	    "db": 0, /* redis db select, useful for multi-node cluser replicas */
+	    "password": "" /* "" - no password, or a non blank "redispassword" to enable password auth in redis */
         }
     },
 
@@ -269,7 +271,9 @@ Explanation for each field:
        ect.. */
     "redis": {
         "host": "127.0.0.1",
-        "port": 6379
+        "port": 6379,
+	"db": 0, /* redis db select, useful for multi-node cluser replicas */
+	"password": "" /* "" - no password, or a non blank "redispassword" to enable password auth in redis */
     },
 
 
